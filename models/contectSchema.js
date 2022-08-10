@@ -4,10 +4,8 @@ const contactSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    phone:{
-        type:Number,
-        maxlength:10,
-        minlength:10,
+    email:{
+        type:String,
         required:true,
     },
     subject:{
@@ -16,5 +14,5 @@ const contactSchema = new mongoose.Schema({
     },
 })
 
-const Contacts = new mongoose.model("Contacts",contactSchema);
+const Contacts = new mongoose.model("Contact",contactSchema);
 module.exports = Contacts
